@@ -1,0 +1,10 @@
+ANALYZER_URL = os.getenv("ANALYZER_URL", "https://presidio-analyzer-nrztwvtmga-uc.a.run.app/analyze")
+Source: https://github.com/cubrixos/presidio-ai/tree/main/presidio-analyzer
+
+ANONYMIZER_URL = os.getenv("ANONYMIZER_URL", "https://presidio-anonymizer-nrztwvtmga-uc.a.run.app/anonymize")
+Source: https://github.com/cubrixos/presidio-ai/tree/main/presidio-anonymizer
+
+INTEGRATE_URL = os.getenv("INTEGRATE_URL", "https://presidio-integrated-api-nrztwvtmga-uc.a.run.app/integrate")
+Source: https://github.com/cubrixos/presidio-ai/tree/main/presidio-integrated-api
+
+Test UI : https://presidio-integrated-api-nrztwvtmga-uc.a.run.app/
