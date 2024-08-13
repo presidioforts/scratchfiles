@@ -17,6 +17,7 @@ This document outlines the structure and team members involved in the InnerSourc
 | John Miller    | Software Engineer             | Engineering Contributor                    |
 | Lisa Brown     | Software Engineer             | Engineering Contributor                    |
 | David Wilson   | Software Engineer             | Engineering Contributor                    |
+| Emily Clark    | Agile Lead /Project Coordinator                   | Project Lead - EPIC Creation & Effort Tracking            |
 
 ## Project Structure
 
@@ -39,6 +40,11 @@ This document outlines the structure and team members involved in the InnerSourc
 - Leads the infrastructure setup and management.
 - Ensures scalability, security, and performance of the product.
 - Works closely with the product engineering manager to align infrastructure goals with the overall product strategy.
+
+### **Agile Lead (Emily Clark)**
+- Creates EPICs and tracks the overall progress of the project.
+- Ensures the team follows agile methodologies and meets sprint goals.
+- Coordinates with the product owner and engineering manager to align efforts with the product roadmap.
 
 ### **Maintainers (Emma Davis & Alex Smith)**
 - Responsible for the ongoing maintenance of the product.
