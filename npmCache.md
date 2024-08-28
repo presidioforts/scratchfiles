@@ -30,3 +30,17 @@ task configureCacheDir {
 tasks.withType(JavaCompile) {
     dependsOn configureCacheDir
 }
+
+
+// build.gradle
+
+// Access the HOME environment variable
+def homeDir = System.getenv('HOME') ?: 'default'
+
+// Example usage in a Gradle task
+task printHomeDir {
+    doLast {
+        println "Home directory is: ${homeDir}"
+    }
+}
+
