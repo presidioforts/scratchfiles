@@ -1,8 +1,12 @@
-Certainly! Here’s a consolidated documentation of both solutions for npm cache management in a Gradle build script, using either the `Exec` task or the Gradle Node plugin.
+Here’s a consolidated End User Developer guide for managing npm cache in Gradle builds, including the note about using `'default'` as a fallback value.
 
 ---
 
-## **npm Cache Management in Gradle Build Script**
+## **End User Developer Guide: Managing npm Cache in Gradle Builds**
+
+### **Overview**
+
+This guide provides two solutions for managing npm cache in Gradle builds. You can choose between using the `Exec` task or the updated Gradle Node plugin. Each solution ensures compatibility for both local builds and Jenkins builds.
 
 ### **Solution 1: Using `Exec` Task**
 
@@ -46,12 +50,6 @@ task npmInstall(type: Exec) {
 // Add npmInstall to the build process
 build.dependsOn npmInstall
 ```
-
-#### **Explanation**
-
-- **`configureNpmCache`**: Creates the npm cache directory and configures npm to use it.
-- **`npmInstall`**: Runs `npm install` with the configured cache.
-- **`build`**: The build process depends on `npmInstall`.
 
 ### **Solution 2: Using Gradle Node Plugin**
 
@@ -107,18 +105,24 @@ task npmInstall(type: com.github.gradle.node.npm.task.NpmTask) {
 build.dependsOn npmInstall
 ```
 
-#### **Explanation**
+### **Note on Fallback Value**
 
-- **Node Plugin Configuration**: Configures the Gradle Node plugin, specifying Node and npm versions.
-- **`configureNpmCache`**: Sets up npm caching as in Solution 1.
-- **`npmInstall`**: Uses `NpmTask` from the Node plugin to run `npm install`.
-- **`build`**: The build process depends on `npmInstall`.
+In both solutions, the line:
+
+```groovy
+def buildNumber = System.getenv('BUILD_NUMBER') ?: 'default'
+```
+
+ensures compatibility for both local and Jenkins builds:
+
+- **Local Builds**: When developers run builds locally, the `BUILD_NUMBER` environment variable may not be set. The fallback value `'default'` is used in such cases.
+- **Jenkins Builds**: Jenkins automatically sets the `BUILD_NUMBER` environment variable, so the script uses this value to manage npm caching for each build, providing better separation of cache directories.
 
 ### **Summary**
 
-Both solutions provide effective ways to manage npm caching in a Gradle build script:
+Both solutions effectively manage npm caching in Gradle builds, offering flexibility based on your development environment:
 
 1. **Using `Exec` Task**: Directly executes npm commands to configure and use a custom cache directory.
-2. **Using Gradle Node Plugin**: Leverages the Node plugin to handle npm tasks, integrating cache configuration similarly.
+2. **Using Gradle Node Plugin**: Utilizes the Node plugin to handle npm tasks with integrated cache configuration.
 
-Choose the solution that best fits your development environment and preferences.
+Choose the solution that best fits your needs and development workflow.
