@@ -1,0 +1,55 @@
+class PipelineProcessor {
+
+    String environment
+    List<String> stages = []
+
+    PipelineProcessor(String environment) {
+        this.environment = environment
+    }
+
+    void addStage(String stage) {
+        stages.add(stage)
+    }
+
+    void executePipeline() {
+        println "Starting pipeline execution for environment: $environment"
+
+        stages.each { stage ->
+            executeStage(stage)
+        }
+
+        println "Pipeline execution completed."
+    }
+
+    private void executeStage(String stage) {
+        println "Executing stage: $stage"
+        
+        // Bug 1: Null pointer exception if stage is null
+        if (stage.toLowerCase() == "deploy") {
+            deploy()
+        } else if (stage.toLowerCase() == "test") {
+            test()
+        } else {
+            println "Unknown stage: $stage"
+        }
+    }
+
+    private void deploy() {
+        println "Deploying application..."
+        // Bug 2: Missing implementation for deployment
+        // Intentionally left blank
+    }
+
+    private void test() {
+        println "Running tests..."
+        // Bug 3: Simulating a failure in the test stage
+        throw new RuntimeException("Test stage failed due to an unknown error.")
+    }
+}
+
+// Sample usage
+PipelineProcessor processor = new PipelineProcessor(null) // Bug 4: Null environment passed
+processor.addStage("build")
+processor.addStage("test")
+processor.addStage("deploy")
+processor.executePipeline()
