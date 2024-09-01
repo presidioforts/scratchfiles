@@ -1,4 +1,5 @@
 Objective: Automated Issue Detection and Explanation in Jenkins Pipeline Code
+
 Goal: Develop an intelligent tool that enables developers to detect and explain potential issues in Jenkins pipeline code written in Groovy, specifically before these issues cause build failures.
 
 Key Features:
