@@ -1,3 +1,4 @@
+```
 import pandas as pd
 import lightgbm as lgb
 from sklearn.model_selection import train_test_split
@@ -82,3 +83,5 @@ predicted_label = list(new_prediction[0]).index(max(new_prediction[0]))
 # Display the prediction and suggested fix
 print(f"Predicted issue label: {predicted_label}")
 print(f"Suggested fix: {df['suggested_fix'][predicted_label]}")
+
+```
