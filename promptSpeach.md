@@ -4,7 +4,9 @@ Here’s your updated introduction with the new information added:
 
 **Introduction:**
 
-*"Thank you all for joining today. I’m Shanmuganathan Palaniappan, but you can call me Shaun. I’m part of the DevIOps Platform Service group, and my work location is San Francisco. Today, I’ll walk you through the **key steps** for a **smooth** and **efficient** VM migration process. Each step will establish a **reliable**, **automated** system that **minimizes risk** and **improves operational efficiency**. Our approach not only **speeds up** the migration but also ensures **reliability** through full automation."*
+*"Thank you all for joining today. I’m Shanmuganathan Palaniappan, but you can call me Shaun. I’m part of the DevIOps Platform Service group, and my work location is San Francisco.
+
+Today, I’ll walk you through the **key steps** for a **smooth** and **efficient** VM migration process. Each step will establish a **reliable**, **automated** system that **minimizes risk** and **improves operational efficiency**. Our approach not only **speeds up** the migration but also ensures **reliability** through full automation."*
 
 
 
