@@ -1,10 +1,4 @@
+EPL-X is a next-generation CI/CD workflow automation product built using GitHub Action-based technology. It’s a SaaS product that provides a core build pack along with advanced toolkits for creating modern automation workflows. The product uses ephemeral runners, which are created when a job starts and destroyed once it’s done. For VM migration automation, we need a secure environment with no cached data, and that’s why we chose this product to build our VM migration automation.
 
-# EPL-X CI/CD Workflow Automation Product
-
-EPL-X is a new CI/CD workflow automation product built using GitHub Action-based technology. It’s a SaaS product that offers a basic build pack and modern development toolkits to create new automation workflows. The product uses ephemeral runners, which are created when a job starts and destroyed once the job is done. For VM migration automation, we need a secure environment with no cached data, and that’s why we chose this product to build our VM migration automation.
-
-## VM Migration Buildpack Delivery
-
-We are delivering the VM migration buildpack to LOB organizations so developers can use it as a self-service tool to migrate VMs. Through ELMA onboarding, users can select the new VM migration buildpack and submit their order. ELMA will then create the VM migration repository and copy all the workflow YAML files. Developers can start using it right away.
-
-As part of the product, we provide common use case workflow files, but LOBs can easily add more workflows if needed.
+Next, how are we going to deliver the workflow files to LOB developers? Developers will use ELMA to create the automation repository. During onboarding, they’ll choose the VM migration build pack and submit the order. ELMA will then create the repository with all the necessary workflow files under the LOB-specific organization. Developers can start using it right away.
+As part of the product, we provide standard VM migration workflow files, but LOBs can easily add more workflows if needed.
