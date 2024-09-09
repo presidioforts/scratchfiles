@@ -1,3 +1,5 @@
+EPL - The SCP record insert currently uses CURL to post data. Since CURL does not support longer strings, we need to modify the design to use moduleInfo.json. These are the details of the artifact publish record.
+
 Operating System Limits: Different operating systems may impose a limit on the length of the command line or URL string. For example, Linux has a limit (ARG_MAX) on the total length of command-line arguments, which is usually around 2 MB, though this can vary.
 
 Server or Application Limits: The server or application receiving the CURL request may impose its own restrictions, such as URL length limits or caps on HTTP header sizes.
