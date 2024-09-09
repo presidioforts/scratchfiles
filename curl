@@ -1,0 +1,7 @@
+Operating System Limits: Different operating systems may impose a limit on the length of the command line or URL string. For example, Linux has a limit (ARG_MAX) on the total length of command-line arguments, which is usually around 2 MB, though this can vary.
+
+Server or Application Limits: The server or application receiving the CURL request may impose its own restrictions, such as URL length limits or caps on HTTP header sizes.
+
+HTTP Protocol Limits: Some HTTP servers may restrict the length of the URL or POST data they accept. For instance, many servers limit the URL length to 2,048 characters for GET requests, though POST requests typically allow longer bodies.
+
+To avoid issues with long data strings in CURL, consider using POST requests with data payloads (e.g., a file upload) or sending data as JSON. In this case, you can include only the artifact list in moduleInfo.json, which should help with handling longer strings more effectively.
