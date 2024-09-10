@@ -31,4 +31,8 @@ pip config set global.index-url $CUSTOM_INDEX_URL
 echo "[INFO] Verifying the configuration..."
 pip config list
 
-echo "[INFO] pip.conf configuration updated successfully."
+# Step 6: Deactivate the virtual environment
+echo "[INFO] Deactivating the virtual environment"
+deactivate || echo "[INFO] Virtual environment deactivation failed or not active."
+
+echo "[INFO] pip.conf configuration updated and virtual environment deactivated successfully."
