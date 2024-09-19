@@ -1,0 +1,46 @@
+It's a good idea to prioritize Validation Before Posting to Kafka as the first question, since ensuring the data is correct before it enters the Kafka pipeline can prevent many downstream issues, including duplicates and errors during processing.
+
+Here’s the revised order of questions:
+
+1. Validation Before Posting to Kafka
+
+What type of data validation are we performing before posting the message to the Kafka topic?
+
+Are there checks to ensure that the message structure and required fields are correct before sending the message to Kafka?
+
+Do we handle cases where the data fails validation? For example, is there a mechanism to log or reject invalid messages before posting to Kafka?
+
+
+2. Debugging in Async Transactions (Logging Strategy)
+
+Are we using a transaction ID or correlation ID to trace messages from the UI through Kafka to MongoDB? If not, can we implement this for better traceability?
+
+Have we defined appropriate log levels (INFO, DEBUG, WARN, ERROR) to capture key system states across services (e.g., when messages are received, processed, or failed)?
+
+Are we logging any errors or exceptions specifically around Kafka message consumption and MongoDB persistence?
+
+Is there a safe way to log key message payloads (without logging sensitive information) to track what data is being passed between services?
+
+
+3. Handling Duplicates (Idempotency in Kafka)
+
+Are we assigning message keys to each Kafka message? If not, can we start assigning a unique key (e.g., user ID or onboarding ID) to ensure idempotency?
+
+How are we managing Kafka offsets? Are we ensuring that consumers track offsets properly to avoid duplicate processing?
+
+Is exactly-once semantics (EOS) enabled in Kafka? If not, should we enable it to prevent duplicate message processing?
+
+Is there any de-duplication logic in place either at the service level or in MongoDB before inserting records?
+
+
+4. Retry Logic
+
+Do we have a retry mechanism in place if a message fails to persist in MongoDB? How does it work (e.g., retries after a delay)?
+
+Are we using a dead letter queue (DLQ) to handle failed messages, so they can be reprocessed later?
+
+Are there any alerts or monitoring set up to trigger if a transaction fails and retries aren’t successful? If not, can we set up error monitoring for failed transactions?
+
+
+This order follows a logical progression from data validation (first step) to logging, duplication handling, and finally retry logic.
+
