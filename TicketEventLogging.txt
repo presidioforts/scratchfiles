@@ -1,0 +1,9 @@
+Got it! In that case, you can frame the title and description as an exploration and understanding initiative. Here’s a revised suggestion:
+
+Title: Discovery and Understanding of Kafka Processing and Logging
+
+Description:
+We are looking to better understand our current Kafka message processing flow, validation, error handling, and logging strategy. This will help us improve traceability and identify areas where we can implement better error handling and idempotency. Additionally, I would like to gather examples of Splunk queries to help browse and analyze logs effectively. Please see the questions outlined below for further details.
+
+This approach makes it clear that the goal is discovery and understanding, rather than making immediate changes.
+
