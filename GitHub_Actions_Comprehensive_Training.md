@@ -1,6 +1,4 @@
 
-# Comprehensive GitHub Actions Training for Experienced Developers
-
 ## Introduction to Advanced GitHub Actions Workflows
 
 In this training, we will explore advanced GitHub Actions concepts, building on your knowledge of CI/CD pipelines from Jenkins. These topics will include reusable workflows, matrix builds, caching, secrets management, and more.
