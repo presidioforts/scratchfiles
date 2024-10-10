@@ -1,6 +1,4 @@
 
-# Comprehensive GitHub Actions Training - Level 2: Reusable Workflows
-
 ## Introduction to Reusable Workflows
 
 In large projects, the need for modular and reusable workflows becomes evident as you scale CI/CD pipelines across repositories. GitHub Actions offers several powerful features, such as reusable workflows and composite actions, to help you achieve that level of efficiency and maintainability.
