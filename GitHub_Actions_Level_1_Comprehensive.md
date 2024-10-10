@@ -1,6 +1,4 @@
 
-# Comprehensive GitHub Actions Training - Level 1
-
 ## Introduction to GitHub Actions
 
 GitHub Actions is a powerful tool that enables you to automate software workflows, such as testing and deployment, right in your GitHub repositories. GitHub Actions provides the ability to build Continuous Integration (CI) and Continuous Deployment (CD) pipelines using YAML configuration files.
