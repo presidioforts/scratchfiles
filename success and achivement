@@ -1,0 +1,24 @@
+1. Strategic Leadership in Cross-Functional Product Development for EPL-X
+EPL-X Product Development Collaboration: As a key contributor within the Engineering Enablement Platform Service group, I played a pivotal role in the development of the EPL-X product. Collaborating closely with co-leads from various domains, I partnered with the GITACT and GITSAAS engineering teams to define and establish Non-Functional Requirements (NFRs) for critical product features, such as logging and buildpack functionalities. My contributions ensured these requirements were clearly articulated, aligned with business objectives, and successfully integrated into the product.
+Buildpack Development Across Multiple Technologies: In partnership with the Engineering Enablement Platform Service group and engineering teams, I contributed to the successful development of buildpacks for Java, .NET, and Node.js. I ensured that these buildpacks adhered to the defined requirements, aligned with industry best practices, and supported the overall product vision. This work enabled a consistent and efficient build process across multiple technology stacks, enhancing both developer productivity and reliability.
+Cross-Functional Collaboration with SMEs: I worked extensively with functional Subject Matter Experts (SMEs) from EPL CI, SCAN, and CD to validate and implement product features, leveraging EPL as the reference platform. This cross-functional collaboration was crucial in ensuring that all features met required standards and aligned with stakeholder expectations. By facilitating clear communication among various teams, I helped ensure the successful delivery of the product with the desired quality and functionality.
+Go-Live Success: The EPL-X product successfully went live in July 2024, marking a significant milestone for the project. All features were delivered as expected, meeting both operational and stakeholder requirements.
+
+2. Created Observability Platform for EPL-X
+Observability Platform Design and Implementation: I led the design and implementation of an observability platform in collaboration with the SRE Observability engineering team. This platform enhanced monitoring, logging, and metrics collection, ensuring comprehensive visibility into the EPL-X product’s performance and reliability.
+NFRs for Monitoring Dashboards: I created Non-Functional Requirements (NFRs) to build various monitoring dashboards for EPL-X, including:
+Workflow Execution Visibility
+EPL-Analytics
+EPL-X GITACT Controller Visibility
+GitACT Component Visibility
+EPL-X Synthetic Transaction Monitoring
+EPL-X Compute Resources Visibility
+EPL-X External Tools/Framework Monitoring
+EPL-X Prometheus Monitoring
+These dashboards provided essential insights into different aspects of the EPL-X platform, enabling proactive monitoring and efficient issue resolution.
+User Acceptance Testing and Go-Live: I formed a User Acceptance group and provided training on the Observability product. Executing the User Acceptance process resulted in a successful go-live alongside the EPL-X product in July 2024.
+3. EPL Product Support and Jenkins Infrastructure Upgrade
+Co-Leading Jenkins Infrastructure Upgrade: I am currently co-leading the upgrade of the Jenkins infrastructure platform, which serves as the backbone of the EPL product’s CI/CD pipeline. This upgrade effort ensures that the platform remains reliable, efficient, and capable of supporting evolving business needs.
+Operational Maintenance and Feature Validation: I am responsible for maintaining the EPL product from an operational perspective, including validating new feature releases to ensure no new bugs are introduced. This role is crucial for ensuring platform stability and delivering a seamless experience to users.
+Breakfix Team Collaboration: I collaborate with the Breakfix team to provide technical solutions when tickets are escalated to the SME group. I lead working sessions to resolve customer-impacting incidents in production, ensuring prompt resolution and minimizing disruption.
+SME Weekly Sync and Process Improvement: I run scheduled weekly sync-up calls with SMEs to collaborate and understand ongoing issues and determine next steps. I also conduct regular brainstorming sessions to improve processes and enhance overall team efficiency.
