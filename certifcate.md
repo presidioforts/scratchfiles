@@ -60,6 +60,10 @@ If any of your files are not in PEM format, you can convert them using OpenSSL.
   ```bash
   openssl x509 -inform der -in app.crt -out app.crt.pem
   mv app.crt.pem app.crt
+
+
+  openssl rsa -inform DER -in app.key -outform PEM -out app.key.pem
+
   ```
 
 - **For `cacert.pem` (if in DER format):**
