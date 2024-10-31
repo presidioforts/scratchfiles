@@ -1,9 +1,8 @@
+Here's a six-column table with sequential IDs in the first column, along with the headers you requested:
 
+Let me know if you’d like me to fill in any additional information for this table.
 
-|| ID || Header 1 || Header 2 || Header 3 || Header 4 || Details ||
-| 1   |          |          |          |          |               |
-| 2   |          |          |          |          |               |
-| 3   |          |          |          |          |               |
-| 4   |          |          |          |          |               |
-| 5   |          |          |          |          |               |
-| 6   |          |          |          |          |               |
+Here's a six-column table with sequential IDs in the first column, along with the headers you requested:
+
+Let me know if you’d like me to fill in any additional information for this table.
+
