@@ -1,0 +1,4 @@
+PFX_PATH=/path/to/your_certificate.pfx
+PFX_PASSWORD=your_pfx_password
+AUTH_TOKEN=your_auth_token
+API_URL=https://api.example.com/your-endpoint
