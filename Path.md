@@ -1,3 +1,7 @@
+
+
+https://www.datacamp.com/tutorial/guide-to-the-gradient-boosting-algorithm
+
 That's a great approach! Learning the basics before diving into coding with LightGBM will help you better understand how it works and how to use it effectively. Here’s a structured plan to get started:
 
 
