@@ -1,0 +1,7 @@
+task runPythonTests(type: Exec) {
+    description = 'Run Python tests using pytest'
+    group = 'Verification'
+    commandLine 'python', '-m', 'pytest', 'path/to/tests'
+    standardOutput = new FileOutputStream('build/reports/python-tests-output.txt')
+    errorOutput = new FileOutputStream('build/reports/python-tests-errors.txt')
+}
