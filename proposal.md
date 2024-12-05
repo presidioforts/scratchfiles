@@ -29,7 +29,6 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
   
 - **Automation & Self-Service Initiatives:**
   - Deploy self-service automation tools for workflow input variables, enabling developers to configure and troubleshoot their pipelines independently.
-  - Reduce SDLC/DevOps tickets by standardizing and automating common workflows.
   - Track adoption metrics (e.g., % of tickets resolved via self-service) to measure success.
 
 - **Exclusion:**
