@@ -1,7 +1,3 @@
-Below is the content with spelling and grammar corrections applied. Most changes are minor, focusing on consistency, clarity, and proper capitalization.
-
----
-
 **2025 Platform Service Team Resource Planning for EPL-X Product**
 
 **Summary**  
@@ -83,6 +79,3 @@ In 2025, the EPL-X resource planning strategy focuses on managing a projected ~1
 - **2025 Q3:** Scale up to ~5,000 components.  
 - **By End of 2025:** Achieve the major milestone of migrating ~10,000 components.
 
----
-
-**End of Document**
