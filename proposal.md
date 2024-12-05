@@ -56,7 +56,7 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
 
 ---
 
-### 2. Engineer Capacity Planning
+### 2. Breakfix team Capacity Planning
 
 **Per Engineer Per Month:**  
   - 5 tickets/day × 22 working days ≈ 110 tickets/month per engineer.
