@@ -19,6 +19,13 @@ The EPL-X product 2025 resource planning focuses on addressing systemic platform
   - Handle post migration/onboarding issues and infrastructure-specific workflows (GITSAS, SCP, GITACT).
   - Manage and resolve standard tickets, including scan/code coverage, Sonar, and tool configuration issues.
   - **Resource Needs**: To manage the projected ticket volume, the team will require 10–11 engineers by 2025.
+  - - **Automation**:
+    - Deploy self-service automation for workflow input variables to streamline ticket handling.
+    - Empower **app developers** to manage configurations independently, enabling faster troubleshooting and reducing manual intervention.
+    - Reduce **SDLC/DevOps tickets** by automating routine workflows and configuration processes.
+
+- **Exclusion**:
+  - Migration of EPL-X infrastructure from TKGI to OpenShift will be handled solely by the SME team and is not part of Breakfix team responsibilities.
 
 - **Infrastructure Platform Service Team**:
   - Oversee EPL-X infrastructure, including automation and platform services.
@@ -42,7 +49,7 @@ The EPL-X product 2025 resource planning focuses on addressing systemic platform
 
 ---
 
-#### **3. Migration Plan**
+#### **3. Above estimation based on below 2025 EPL-X App Migration plan**
 - **Timeline**:
   - **2024 Q3**: ~130 components migrated in non-production; <40 in production.
   - **2024 Q4–2025 Q1**: Target ~300 components.
@@ -50,14 +57,7 @@ The EPL-X product 2025 resource planning focuses on addressing systemic platform
   - **2025 Q3**: ~5,000 components.
   - **2025 End**: Target ~10,000 components migrated, marking a major milestone for EPL-X product and platform stabilization.
   
-- **Automation**:
-  - **Implementation**:
-    - Deploy self-service automation for workflow input variables to streamline ticket handling.
-    - Empower **app developers** to manage configurations independently, enabling faster troubleshooting and reducing manual intervention.
-    - Reduce **SDLC/DevOps tickets** by automating routine workflows and configuration processes.
 
-- **Exclusion**:
-  - Migration of EPL-X infrastructure from TKGI to OpenShift will be handled solely by the SME team and is not part of Breakfix team responsibilities.
 
 ---
 
