@@ -1,58 +1,101 @@
-### **2025 Resource Planning for EPL-X Product**
+**2025 Resource Planning for EPL-X Product**  
+**Version:** 1.0  
+**Date:** [Insert Date]
 
-#### **Summary**
-The EPL-X product 2025 resource planning focuses on addressing systemic platform issues, managing workflows, and supporting infrastructure services efficiently. The responsibilities are divided among three key teams: **Performance Engineering**, **Breakfix Incident**, and **Infrastructure Platform Service**. While automation and empowering app developers self-service aim to reduce SDLC/DevOps tickets, resource estimations highlight the need for 10–11 engineers in the Breakfix team by 2025 to handle the increased ticket volume. No additional resources are required for Performance Engineering or Infrastructure Platform Service teams.
+**Summary**  
+In 2025, the EPL-X Resource Planning strategy is focused on managing a projected ~10,000 annual tickets supporting ~10,000 migrated components, stabilizing the platform, and enabling efficient developer self-service. This approach anticipates the evolving complexity of the EPL-X environment while proactively scaling team capacity and deploying automation. Three teams will continue to drive operational excellence:
+
+- **Performance Engineering (PE)**: Address systemic platform and product issues with existing headcount.
+- **Breakfix Incident Team**: Scale to 10–11 engineers to handle standard tickets and workflow challenges. Introduce self-service automation to reduce manual intervention and empower developers.
+- **Infrastructure Platform Service Team (SME/Automation Engineers)**: Oversee infrastructure migrations and services without additional resources, ensuring the underlying platform supports growth and stability.
 
 ---
 
-#### **1. Responsibilities**
+### 1. Team Responsibilities & Scope
 
-- **Performance Engineering Team**:
-  - Address systemic platform and product issues.
-  - Resolve EPL-X platform architecture challenges.
-  - **Resource Note**: No additional resources are required. The PE and SME teams will continue to work on EPL-X similarly to EPL.
+**1.1 Performance Engineering Team**  
+- **Primary Responsibilities:**
+  - Address systemic platform and product issues impacting EPL-X.
+  - Collaborate with SME and Infra teams to resolve architectural challenges.
+- **Resource Note:**  
+  - No additional resources needed for 2025.  
+  - The existing PE and SME teams will continue supporting EPL-X similarly to EPL, ensuring platform optimizations and reducing recurring incidents.
 
-- **Breakfix Incident Team**:
-  - Manage workflows for 9 buildpacks (Gradle-java, dotnet, npm, python) covering:
-    - Checkout, Build, Test, Publish, Code Sign, Secrets, Sonar,Scan.
+**1.2 Breakfix Incident Team**  
+- **Primary Responsibilities:**
+  - Manage and resolve standard workflow tickets across 9 buildpacks (e.g., Gradle-java, dotnet, npm, python), including:  
+    - Checkout, Build, Test, Publish, Code Sign, Secrets Management, Sonar Scanning, and Security Scan.
   - Support integrations with JFrog CLI, Redis, Object Store, HashiCorp Vault, and Artifactory.
-  - Handle post migration/onboarding issues and infrastructure-specific workflows (GITSAS, SCP, GITACT).
-  - Manage and resolve standard tickets, including scan/code coverage, Sonar, and tool configuration issues.
-  - **Resource Needs**: To manage the projected ticket volume, the team will require 10–11 engineers by 2025.
-  - - **Automation**:
-    - Deploy self-service automation for workflow input variables to streamline ticket handling.
-    - Empower **app developers** to manage configurations independently, enabling faster troubleshooting and reducing manual intervention.
-    - Reduce **SDLC/DevOps tickets** by automating routine workflows and configuration processes.
+  - Triage and resolve post-migration/onboarding issues specific to EPL-X infrastructure, including GITSAS, SCP, and GITACT workflows.
+  - Handle standard tickets (e.g., scan/code coverage, Sonar, and tool configuration issues) to maintain developer velocity.
+  
+- **Automation & Self-Service Initiatives:**
+  - Deploy self-service automation tools for workflow input variables, enabling developers to configure and troubleshoot their pipelines independently.
+  - Reduce SDLC/DevOps tickets by standardizing and automating common workflows.
+  - Track adoption metrics (e.g., % of tickets resolved via self-service) to measure success.
 
-- **Exclusion**:
-  - Migration of EPL-X infrastructure from TKGI to OpenShift will be handled solely by the SME team and is not part of Breakfix team responsibilities.
+- **Exclusion:**
+  - Migration of EPL-X infrastructure from TKGI to OpenShift is out of scope for this team and will be led by the SME/Infrastructure team.
 
-- **Infrastructure Platform Service Team**:
-  - Oversee EPL-X infrastructure, including automation and platform services.
-  - Manage infrastructure tasks such as migrations from TKGI to OpenShift.
-  - Support self-service automation tools for workflow input variables specific to infrastructure components.
-  - **Resource Note**: Current SME team and infrastructure automation engineers will handle these tasks, requiring no additional resources.
+- **Resource Requirements:**
+  - Current projections estimate ~10,000 standard tickets in 2025.
+  - Each engineer can effectively handle ~1,096 tickets/month after accounting for PTO/training.
+  - Based on projected volume, 10–11 engineers will be required by the end of 2025.
+
+- **Ramp-Up Plan:**
+  - **2024 Q3:** Begin with baseline team staffing (e.g., 3–4 engineers) as components begin migrating.  
+  - **2024 Q4–2025 Q1:** Incrementally add engineers (1–2 per quarter) as components grow to ~300.  
+  - **2025 Q2:** Reach ~7–8 engineers to handle ~1,000–1,500 components.  
+  - **2025 Q3:** Scale up to 10–11 engineers as we approach ~5,000 components.  
+  - **End of 2025:** Final team size at 10–11 engineers to support ~10,000 components, achieving a major EPL-X milestone.
+
+**1.3 Infrastructure Platform Service Team**  
+- **Primary Responsibilities:**
+  - Oversee EPL-X infrastructure services, including the TKGI to OpenShift migration.
+  - Maintain platform-level automation and ensure stable foundational services.
+  - Provide and enhance infrastructure-level self-service tools for developers (e.g., provisioning scripts, environment setup).
+  
+- **Resource Note:**
+  - No additional resources required. The current SME team and infrastructure automation engineers will handle tasks associated with platform migrations and ongoing support.
 
 ---
 
-#### **2. Breakfix Incident Team Ticket Management**
-- **Standard Tickets**:
-  - Issues related to scan/code coverage, Sonar, and other tool configurations.
-- **Ticket Volume**:
-  - Projected 2025 volume: ~10,000 tickets for ~10,000 components.
-- **Ticket Handling Capacity**:
-  - **Per Engineer**:
-    - Capacity: 5 tickets/day × 22 working days = **1320 tickets/month**.
-    - Adjusted for PTO/Training (17%): Remove 224 tickets, leaving **1096 tickets/month**.
-  - **Resource Requirement**:
-    - To handle 10,000 tickets, **10–11 engineers** will be required in 2025.
+### 2. Ticket Management & Capacity Planning
 
-  Above estimation based on below 2025 EPL-X App Migration plan**
-- **Timeline**:
-  - **2024 Q3**: ~130 components migrated in non-production; <40 in production.
-  - **2024 Q4–2025 Q1**: Target ~300 components.
-  - **2025 Q2**: ~1,000–1,500 components.
-  - **2025 Q3**: ~5,000 components.
-  - **2025 End**: Target ~10,000 components migrated, marking a major milestone for EPL-X product and platform stabilization.
+**2.1 Ticket Types**  
+- **Standard Tickets:**  
+  Issues related to scan/code coverage, Sonar configurations, and other tool-specific challenges that occur regularly as the platform scales.
+
+**2.2 Ticket Volume Assumptions**  
+- **2025 Projection:**  
+  Approximately 10,000 standard tickets are anticipated throughout the year as ~10,000 components are onboarded.
   
+- **Validation & Adjustments:**  
+  These projections will be reviewed quarterly to adjust staffing or automation targets as needed. If volumes exceed expectations, consider short-term contractors or accelerated automation.
+
+**2.3 Engineer Capacity Calculation**  
+- **Per Engineer Per Month:**
+  - 5 tickets/day × 22 working days ≈ 110 tickets/month per engineer.
+  - With process improvements, each engineer can escalate to handle approximately 60 tickets/week (≈ 240 tickets/month).
+  - After accounting for PTO/training (~17%), a safe estimate is ~1,096 tickets/engineer/year (adjusting the monthly figure to align with annual totals and training assumptions).
+  
+- **Total Resource Requirement:**
+  - To handle 10,000 tickets annually: ~10–11 engineers.
+
+*(Note: The exact capacity and annualization should be carefully validated. The provided calculations assume monthly capacities scale linearly. The team will refine estimates as actual data becomes available.)*
+
+---
+
+### 3. Migration & Growth Milestones
+
+**3.1 Component Migration Schedule**  
+- **2024 Q3:** ~130 components migrated in non-production, <40 in production.
+- **2024 Q4–2025 Q1:** Migrate ~300 components.
+- **2025 Q2:** Migrate ~1,000–1,500 components, triggering a higher ticket load.
+- **2025 Q3:** Scale up to ~5,000 components.
+- **By End of 2025:** Achieve the major milestone of migrating ~10,000 components.
+
+**3.2 Infrastructure Migrations**  
+- **TKGI to OpenShift:**  
+  Led by the SME/Infrastructure team, ensuring platform maturity, reduced downtime, and operational resiliency without additional resource needs.
 
