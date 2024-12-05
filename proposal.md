@@ -56,9 +56,9 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
 
 ---
 
-### 2. Capacity Planning
+### 2. Engineer Capacity Planning
 
-**Engineer Capacity Calculation Per Engineer Per Month:**  
+**Per Engineer Per Month:**  
   - 5 tickets/day × 22 working days ≈ 110 tickets/month per engineer.
   - With process improvements, each engineer can escalate to handle approximately 60 tickets/week (≈ 240 tickets/month).
   - After accounting for PTO/training (~17%), a safe estimate is ~1,096 tickets/engineer/year (adjusting the monthly figure to align with annual totals and training assumptions).
