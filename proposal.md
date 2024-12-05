@@ -70,7 +70,7 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
 
 ### 3. Migration & Growth Milestones
 
-**3.1 Component Migration Schedule**  
+**3.1 App Component Migration Schedule**  
 - **2024 Q3:** ~130 components migrated in non-production, <40 in production.
 - **2024 Q4–2025 Q1:** Migrate ~300 components.
 - **2025 Q2:** Migrate ~1,000–1,500 components, triggering a higher ticket load.
