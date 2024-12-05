@@ -47,9 +47,7 @@ The EPL-X product 2025 resource planning focuses on addressing systemic platform
   - **Resource Requirement**:
     - To handle 10,000 tickets, **10–11 engineers** will be required in 2025.
 
----
-
-#### **3. Above estimation based on below 2025 EPL-X App Migration plan**
+  Above estimation based on below 2025 EPL-X App Migration plan**
 - **Timeline**:
   - **2024 Q3**: ~130 components migrated in non-production; <40 in production.
   - **2024 Q4–2025 Q1**: Target ~300 components.
@@ -58,16 +56,3 @@ The EPL-X product 2025 resource planning focuses on addressing systemic platform
   - **2025 End**: Target ~10,000 components migrated, marking a major milestone for EPL-X product and platform stabilization.
   
 
-
----
-
-#### **4. Next Steps**
-1. Finalize resource allocation for the Breakfix Incident team.
-2. Schedule office hours (4–6 weeks) to address migration and onboarding challenges.
-3. Implement self-service automation tools for workflow management.
-4. Monitor ticket volumes and migration progress quarterly to meet 2025 goals.
-5. Train app developers on managing configurations via automation tools.
-
----
-
-This version is streamlined and highlights the key elements of the plan, ensuring clarity and professionalism. Let me know if further refinements are needed!
