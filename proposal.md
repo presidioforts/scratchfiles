@@ -23,7 +23,7 @@ The EPL-X product 2025 resource planning focuses on addressing systemic platform
 - **Infrastructure Platform Service Team**:
   - Oversee EPL-X infrastructure, including automation and platform services.
   - Manage infrastructure tasks such as migrations from TKGI to OpenShift.
-  - Support self-service automation tools for workflow input variables.
+  - Support self-service automation tools for workflow input variables specific to infrastructure components.
   - **Resource Note**: Current SME team and infrastructure automation engineers will handle these tasks, requiring no additional resources.
 
 ---
