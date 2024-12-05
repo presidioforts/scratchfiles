@@ -14,7 +14,7 @@ The EPL-X product 2025 resource planning focuses on addressing systemic platform
 
 - **Breakfix Incident Team**:
   - Manage workflows for 9 buildpacks (Gradle-java, dotnet, npm, python) covering:
-    - Checkout, Build, Test, Publish, Code Sign, Scan.
+    - Checkout, Build, Test, Publish, Code Sign, Secrets, Sonar,Scan.
   - Support integrations with JFrog CLI, Redis, Object Store, HashiCorp Vault, and Artifactory.
   - Handle post migration/onboarding issues and infrastructure-specific workflows (GITSAS, SCP, GITACT).
   - Manage and resolve standard tickets, including scan/code coverage, Sonar, and tool configuration issues.
