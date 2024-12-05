@@ -1,7 +1,7 @@
 **2025 Resource Planning for EPL-X Product**  
 
 **Summary**  
-In 2025, the EPL-X Resource Planning strategy is focused on managing a projected ~10,000 annual tickets supporting ~10,000 migrated components, stabilizing the platform, and enabling efficient developer self-service. This approach anticipates the evolving complexity of the EPL-X environment while proactively scaling team capacity and deploying automation. Three teams will continue to drive operational excellence:
+In 2025, the EPL-X Resource Planning strategy is focused on managing a projected ~10,000 annual tickets supporting ~10,000 migrated components, stabilizing the platform, and enabling efficient developer self-service. This approach anticipates the evolving complexity of the EPL-X environment while proactively scaling team capacity and deploying automation. Three teams will continue to drive Platform Service and Operation:
 
 - **Performance Engineering (PE)**: Address systemic platform and product issues with existing headcount.
 - **Breakfix Incident Team**: Scale to 10–11 engineers to handle standard tickets and workflow challenges. Introduce self-service automation to reduce manual intervention and empower developers.
