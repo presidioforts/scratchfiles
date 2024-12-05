@@ -1,7 +1,3 @@
-Here’s the **consolidated, concise, and professional version** of the resource planning document with all updates incorporated:
-
----
-
 ### **2025 Resource Planning for EPL-X Product**
 
 #### **Summary**
