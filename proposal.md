@@ -1,7 +1,7 @@
 ### **2025 Resource Planning for EPL-X Product**
 
 #### **Summary**
-The EPL-X product 2025 resource planning focuses on addressing systemic platform issues, managing workflows, and supporting infrastructure services efficiently. The responsibilities are divided among three key teams: **Performance Engineering**, **Breakfix Incident**, and **Infrastructure Platform Service**. While automation and empowering app developers aim to reduce SDLC/DevOps tickets, resource estimations highlight the need for 10–11 engineers in the Breakfix team by 2025 to handle the increased ticket volume. No additional resources are required for Performance Engineering or Infrastructure Platform Service teams.
+The EPL-X product 2025 resource planning focuses on addressing systemic platform issues, managing workflows, and supporting infrastructure services efficiently. The responsibilities are divided among three key teams: **Performance Engineering**, **Breakfix Incident**, and **Infrastructure Platform Service**. While automation and empowering app developers self-service aim to reduce SDLC/DevOps tickets, resource estimations highlight the need for 10–11 engineers in the Breakfix team by 2025 to handle the increased ticket volume. No additional resources are required for Performance Engineering or Infrastructure Platform Service teams.
 
 ---
 
