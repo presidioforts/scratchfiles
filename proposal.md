@@ -1,4 +1,4 @@
-**2025 Resource Planning for EPL-X Product**  
+**2025 Platform Service Team Resource Planning for EPL-X Product**  
 
 **Summary**  
 In 2025, the EPL-X Resource Planning strategy is focused on managing a projected ~10,000 annual tickets supporting ~10,000 migrated components, stabilizing the platform, and enabling efficient developer self-service. This approach anticipates the evolving complexity of the EPL-X environment while proactively scaling team capacity and deploying automation. Three teams will continue to drive Platform Service and Operation:
