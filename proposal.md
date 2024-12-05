@@ -1,3 +1,10 @@
+Hello Satish,
+
+Following our recent discussions with the SME team and Manda, we have prepared the document, "2025 Platform Service Team Resource Planning for EPL-X Product."
+
+Please review it and let us know if anything is missing or if you require further clarification.
+
+
 **2025 Platform Service Team Resource Planning for EPL-X Product**
 
 **Summary**  
