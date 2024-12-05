@@ -40,8 +40,7 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
   - Based on projected volume, 10–11 engineers will be required by the end of 2025.
 
 - **Ramp-Up Plan:**
-  - **2024 Q3:** Begin with baseline team staffing (e.g., 3–4 engineers) as components begin migrating.  
-  - **2024 Q4–2025 Q1:** Incrementally add engineers (1–2 per quarter) as components grow to ~300.  
+  - **2024 Q4–2025 Q1:** Incrementally add engineers (3–4 engineers) as components grow to ~300.  
   - **2025 Q2:** Reach ~7–8 engineers to handle ~1,000–1,500 components.  
   - **2025 Q3:** Scale up to 10–11 engineers as we approach ~5,000 components.  
   - **End of 2025:** Final team size at 10–11 engineers to support ~10,000 components, achieving a major EPL-X milestone.
@@ -57,29 +56,15 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
 
 ---
 
-### 2. Ticket Management & Capacity Planning
+### 2. Capacity Planning
 
-**2.1 Ticket Types**  
-- **Standard Tickets:**  
-  Issues related to scan/code coverage, Sonar configurations, and other tool-specific challenges that occur regularly as the platform scales.
-
-**2.2 Ticket Volume Assumptions**  
-- **2025 Projection:**  
-  Approximately 10,000 standard tickets are anticipated throughout the year as ~10,000 components are onboarded.
-  
-- **Validation & Adjustments:**  
-  These projections will be reviewed quarterly to adjust staffing or automation targets as needed. If volumes exceed expectations, consider short-term contractors or accelerated automation.
-
-**2.3 Engineer Capacity Calculation**  
-- **Per Engineer Per Month:**
+**Engineer Capacity Calculation Per Engineer Per Month:**  
   - 5 tickets/day × 22 working days ≈ 110 tickets/month per engineer.
   - With process improvements, each engineer can escalate to handle approximately 60 tickets/week (≈ 240 tickets/month).
   - After accounting for PTO/training (~17%), a safe estimate is ~1,096 tickets/engineer/year (adjusting the monthly figure to align with annual totals and training assumptions).
   
 - **Total Resource Requirement:**
   - To handle 10,000 tickets annually: ~10–11 engineers.
-
-*(Note: The exact capacity and annualization should be carefully validated. The provided calculations assume monthly capacities scale linearly. The team will refine estimates as actual data becomes available.)*
 
 ---
 
@@ -94,5 +79,5 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
 
 **3.2 Infrastructure Migrations**  
 - **TKGI to OpenShift:**  
-  Led by the SME/Infrastructure team, ensuring platform maturity, reduced downtime, and operational resiliency without additional resource needs.
+  Led by the SME/Infrastructure team without additional resource needs.
 
