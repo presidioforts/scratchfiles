@@ -14,7 +14,7 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
 **1.1 Performance Engineering Team**  
 - **Primary Responsibilities:**
   - Address systemic platform and product issues impacting EPL-X.
-  - Collaborate with SME and Infra teams to resolve architectural challenges.
+  - Collaborate with Workflow SME and Infra SME teams to resolve architectural challenges.
 - **Resource Note:**  
   - No additional resources needed for 2025.  
   - The existing PE and SME teams will continue supporting EPL-X similarly to EPL, ensuring platform optimizations and reducing recurring incidents.
