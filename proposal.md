@@ -49,7 +49,7 @@ In 2025, the EPL-X Resource Planning strategy is focused on managing a projected
 - **Primary Responsibilities:**
   - Oversee EPL-X infrastructure services, including the TKGI to OpenShift migration.
   - Maintain platform-level automation and ensure stable foundational services.
-  - Provide and enhance infrastructure-level self-service tools for developers (e.g., provisioning scripts, environment setup).
+  - Provide and enhance infrastructure-level self-service tools.
   
 - **Resource Note:**
   - No additional resources required. The current SME team and infrastructure automation engineers will handle tasks associated with platform migrations and ongoing support.
