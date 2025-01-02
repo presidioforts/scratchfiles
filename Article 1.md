@@ -1,43 +1,31 @@
 
-Here's an improved version of the content based on the image:
+Why the Gradle Daemon Fails to Start in Java Build Packs and How to Fix It
 
+The Gradle Daemon may fail to start due to line-ending issues in the gradlew script, often caused by incorrect configurations when managing files across different operating systems (e.g., Windows vs. Unix). To resolve this issue, follow these steps:
 
----
+1. Configure Git for Proper Line Endings
 
-Why is the Gradle Daemon startup failing while using Gradle in the Java build pack?
-
-Answer:
-The Gradle Daemon may fail to start due to line-ending issues in the gradlew script, commonly caused by incorrect configurations when managing files across different operating systems (e.g., Windows vs. Unix). To resolve this issue, follow these steps:
-
-1. Ensure proper line-ending handling during Git operations:
-
-Use the correct autocrlf setting when checking in the gradlew script.
-
-Run the following command in your Git configuration:
+Ensure Git handles line endings correctly by setting core.autocrlf:
 
 git config core.autocrlf true
 
 
+2. Convert gradlew to Unix Format
 
-2. Convert the gradlew file to Unix format:
-
-Use the dos2unix utility to convert the gradlew script from Windows (CRLF) line endings to Unix (LF) line endings. Execute the following command:
+Use the dos2unix utility to convert line endings from Windows (CRLF) to Unix (LF):
 
 dos2unix gradlew
 
 
+3. Commit and Push the Updated gradlew Script
 
-3. Re-check in the updated gradlew script:
+After conversion, commit and push the corrected gradlew file to your repository:
 
-After making the necessary adjustments, commit and push the corrected gradlew file to your repository to ensure proper behavior in Unix-based environments.
-
-
-
-
-By following these steps, the Gradle Daemon should start successfully, avoiding issues caused by inconsistent line-ending formats.
+git add gradlew
+git commit -m "Convert gradlew to Unix line endings"
+git push
 
 
----
 
-This revised version is more structured and user-friendly while providing technical clarity.
+Following these steps ensures the Gradle Daemon starts successfully by preventing issues caused by inconsistent line-ending formats.
 
