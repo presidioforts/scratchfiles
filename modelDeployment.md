@@ -1,7 +1,3 @@
-Here’s a consolidated **MVP deployment requirement document** for your **FAISS + all-mpnet-base-v2 + API** architecture, designed to support **100 concurrent users** and scale up to **1,000 users**.
-
----
-
 ### **MVP Deployment Requirement Document**
 
 #### **Objective**
