@@ -1,7 +1,3 @@
-Below is the **refined design** of our Python Buildpack Open Standard, now including a **sample `pyproject.toml`** to illustrate a typical configuration:
-
----
-
 ## **Python Buildpack Open Standard**
 
 ### **1. `pyproject.toml` as the Centerpiece**
@@ -98,4 +94,3 @@ ignore = ["E203", "W503"]
 - **Testing & Coverage**: `[tool.pytest.ini_options]` configures `pytest` to run coverage and produce both XML and HTML reports.
 - **Formatting & Linting**: `[tool.black]` and `[tool.flake8]` sections centralize code style rules, reducing the need for extra config files.
 
-This example ensures that **open-source best practices** (with `pyproject.toml`) dovetail with **enterprise needs** (handled in SCP/ELMA/IDP). Developers declare their Python-level details here, while high-level pipeline configuration—like scanning tools, artifact publishing, or environment toggles—lives in the SCP layer for full self-service.
