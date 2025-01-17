@@ -1,5 +1,3 @@
-Here’s your invite note formatted in **Markdown**:
-
 ```markdown
 **Subject:** Weekly Product Update and Discussion  
 
@@ -46,7 +44,4 @@ The agenda will cover detailed discussions and updates based on the tables below
 Looking forward to your active participation.  
 
 Best regards,  
-[Your Name]  
-```
-
-You can copy and paste this Markdown directly into your platform. Let me know if you need further adjustments!
+Shaun
