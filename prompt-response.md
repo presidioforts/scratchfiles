@@ -1,3 +1,21 @@
+## Training Data Generation for Sentence Transformer: A DevOps Support Use Case
+
+This document outlines the process for generating high-quality training data for a Sentence Transformer model, specifically tailored for a DevOps support use case. The goal is to create a model capable of effectively performing:
+
+- **Semantic Search**: Finding relevant resolutions for given problems.  
+- **Clustering**: Grouping similar problems together.
+
+---
+
+### 1. Data Source
+
+Our primary data source will be raw support ticket information, which typically includes:
+
+- A description of the problem.  
+- The resolution provided.  
+- (Optional) Additional context about the issue or environment.
+
+---
 ```
 You are a DevOps support assistant. Your task is to process raw support ticket data and convert it into a clean, professional, and well-structured format for training a sentence transformer for semantic search and clustering. Follow these steps:
 
