@@ -7,7 +7,7 @@ This document outlines the process for generating high-quality training data for
 
 ---
 
-### 1. Data Source
+### Data Source
 
 Our primary data source will be raw support ticket information, which typically includes:
 
@@ -16,7 +16,7 @@ Our primary data source will be raw support ticket information, which typically 
 - (Optional) Additional context about the issue or environment.
 
 ---
-### 2. Data Transformation Using LLM
+### Data Transformation Using LLM
 
 We will use a Large Language Model (LLM) to transform the raw support ticket data into a structured JSON format suitable for Sentence Transformer training. The LLM acts as a DevOps support assistant by:
 
@@ -26,7 +26,7 @@ We will use a Large Language Model (LLM) to transform the raw support ticket dat
 
 ---
 
-### 3. Prompt Engineering
+### Prompt Engineering
 ```
 You are a DevOps support assistant. Your task is to process raw support ticket data and convert it into a clean, professional, and well-structured format for training a sentence transformer for semantic search and clustering. Follow these steps:
 
