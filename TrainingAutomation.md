@@ -52,7 +52,7 @@ Now, process the following raw ticket data:
 - Resolution: "{resolution_text}"
 - Context: "{context_text}" (Optional - if no context, leave blank or put "N/A")
 
-```
+
 
 **4. Sample Input and Output:**
 
@@ -74,7 +74,7 @@ Now, process the following raw ticket data:
   ],
   "context": "User Training"
 }
-```
+
 
 **LLM Generated JSON Output (Example 2 - Variation):**
 
