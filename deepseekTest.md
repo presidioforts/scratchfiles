@@ -170,10 +170,4 @@ After providing the raw ticket data, the following output was generated.
 
 ---
 
-## Conclusion
 
-This document shows examples of using the `ollama` CLI to list models, display model details, access command help, run a model, and process raw support ticket data into a structured JSON format. This structured output is ideal for training a sentence transformer for semantic search and clustering.
-
----
-
-You can now save this content into a file (e.g., `ollama_documentation.md`) and view it in your favorite Markdown editor.
