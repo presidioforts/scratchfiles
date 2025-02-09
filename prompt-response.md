@@ -16,6 +16,17 @@ Our primary data source will be raw support ticket information, which typically 
 - (Optional) Additional context about the issue or environment.
 
 ---
+### 2. Data Transformation Using LLM
+
+We will use a Large Language Model (LLM) to transform the raw support ticket data into a structured JSON format suitable for Sentence Transformer training. The LLM acts as a DevOps support assistant by:
+
+1. Cleaning the data.  
+2. Structuring the data.  
+3. Enriching the data with any missing but relevant details.
+
+---
+
+### 3. Prompt Engineering
 ```
 You are a DevOps support assistant. Your task is to process raw support ticket data and convert it into a clean, professional, and well-structured format for training a sentence transformer for semantic search and clustering. Follow these steps:
 
