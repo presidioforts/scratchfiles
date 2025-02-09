@@ -36,13 +36,13 @@ Raw Input:
 Structured Output:
 ```json
 {
-  "problem": "The application crashes when clicking the submit button.",
-  "resolution": "Update the application to version 2.3.1. This will fix the bug causing the crash.",
+  "problem": "jenkins EPL build failing when i trigger release build.",
+  "resolution": "create devops ticket with build build with required log for engineer to troubleshoot. use the JIRA link to report the problem.",
   "negative_examples": [
-    "The application is running slowly.",
-    "The user cannot log in."
+    "The build is running slowly.",
+    "The user cannot trigger build."
   ],
-    "context": "User is using Windows 10, Chrome browser."
+    "context": "User is EPL, window worker."
 }
 ```
 
