@@ -126,22 +126,4 @@ The generated JSON data will be used to train the Sentence Transformer model. Th
 3. **Enhanced DevOps Support**  
    This will lead to faster resolution times and improved user experience.
 
----
-
-### 7. Next Steps
-
-1. **Gather and Preprocess a Large Dataset**  
-   Collect as many raw support tickets as possible and preprocess them (e.g., removing PII, normalizing text).
-
-2. **Refine the LLM Prompt**  
-   Adjust the prompt based on initial results to optimize data quality and model performance.
-
-3. **Train and Evaluate the Sentence Transformer Model**  
-   Use the curated JSON data to train the model, then evaluate it on semantic search and clustering tasks.
-
-4. **Integrate the Model into the DevOps Support Workflow**  
-   Deploy the trained model within the DevOps support process for automated resolution suggestions and issue clustering.
-
----
-
 
