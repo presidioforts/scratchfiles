@@ -64,7 +64,7 @@ Now, process the following raw ticket data:
 - Resolution: "check the artifacfory or npm central if the version is and update the available version in package.json. Retrigger the build"
 - Context: "User Training" (Optional - if no context, leave blank or put "N/A")
 ```
-### LLM Response for Sentence Transformer
+### LLM Response for Sentence Transformer input json payload
 ```
 {
   "problem": "npm error: package angular-2002.05069 version not found.",
