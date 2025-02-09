@@ -116,3 +116,5 @@ Now, process the following raw ticket data:
 The generated JSON data will be used to train the Sentence Transformer model. The **problem** and **resolution** fields will serve as positive examples, while the **negative_examples** will be used to teach the model to distinguish between related and unrelated issues. The (optional) **context** field will provide additional information that the model can leverage.
 
 ---
+
+**End of Document**
