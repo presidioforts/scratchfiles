@@ -1,8 +1,27 @@
+Below is the formatted Markdown document you can save as a `.md` file:
+
+---
+
+# Ollama CLI Commands and Support Ticket Data Processing
+
+This document demonstrates how to use the `ollama` command-line interface to manage models and process raw support ticket data into a structured JSON format. The examples include listing models, showing model details, viewing command help, running a model, and converting raw ticket data into clean JSON objects for training a sentence transformer.
+
+---
+
+## 1. List Models
+
+```bash
 C:\Users\ollama>ollama list
 NAME               ID              SIZE      MODIFIED
 deepseek-r1:8b     28f8fd6cdc67    4.9 GB    6 days ago
 llama3.2:latest    a80c4f17acd5    2.0 GB    6 days ago
+```
 
+---
+
+## 2. Show Model Details
+
+```bash
 C:\Users\ollama>ollama show deepseek-r1:8b
   Model
     architecture        llama
@@ -20,8 +39,13 @@ C:\Users\ollama>ollama show deepseek-r1:8b
   License
     MIT License
     Copyright (c) 2023 DeepSeek
+```
 
+---
 
+## 3. Command Help
+
+```bash
 C:\Users\ollama>ollama
 Usage:
   ollama [flags]
@@ -46,12 +70,24 @@ Flags:
   -v, --version   Show version information
 
 Use "ollama [command] --help" for more information about a command.
+```
 
+---
+
+## 4. List Models Again
+
+```bash
 C:\Users\ollama>ollama list
 NAME               ID              SIZE      MODIFIED
 deepseek-r1:8b     28f8fd6cdc67    4.9 GB    6 days ago
 llama3.2:latest    a80c4f17acd5    2.0 GB    6 days ago
+```
 
+---
+
+## 5. Run a Model and Process Raw Ticket Data
+
+```bash
 C:\Users\ollama>ollama run llama3.2:latest
 >>> You are a DevOps support assistant. Your task is to process raw support ticket data and convert it into a clean, pro
 ... fessional, and well-structured format for training a sentence transformer for semantic search and clustering. Follow
@@ -99,24 +135,20 @@ C:\Users\ollama>ollama run llama3.2:latest
 ... - Problem: "{problem_text}"
 ... - Resolution: "{resolution_text}"
 ... - Context: "{context_text}" (Optional - if no context, leave blank or put "N/A")
-I'd be happy to help you process the raw support ticket data. Here's an example of how I would structure the
-output as a JSON object:
+```
 
-Please provide the raw ticket data, including the problem text, resolution text, and context text (if applicable).
-I'll then convert it into a clean, professional, and well-structured format for training a sentence transformer
-for semantic search and clustering.
+---
 
->>> Problem: npm error package angular-2002.05069 version not found
-... Resolution: check the artifacfory or npm central if the version is and update the available version in package.json.
-...  Retrigger the build.
-... Context: User Training
-Here's the processed data:
+## 6. Processed Ticket Data Example
+
+After providing the raw ticket data, the following output was generated.
+
+### Variation 1
 
 ```json
 {
   "problem": "npm error package angular-2002.05069 version not found.",
-  "resolution": "check the artifactory or npm central if the version is available and update the available version in package.json. retrigger
-the build.",
+  "resolution": "check the artifactory or npm central if the version is available and update the available version in package.json. retrigger the build.",
   "negative_examples": [
     "The package cannot be installed due to a version mismatch.",
     "There is no valid version of the Angular package."
@@ -125,13 +157,12 @@ the build.",
 }
 ```
 
-I made two variations of the problem and resolution to improve data diversity:
+### Variation 2
 
 ```json
 {
   "problem": "npm error: unable to find package angular@2002.05069",
-  "resolution": "verify the artifactory or npm central repository for the specified Angular version and update the version in package.json
-before retriggering the build.",
+  "resolution": "verify the artifactory or npm central repository for the specified Angular version and update the version in package.json before retriggering the build.",
   "negative_examples": [
     "The Angular package cannot be installed due to a missing version.",
     "No valid version of Angular is available."
@@ -140,6 +171,12 @@ before retriggering the build.",
 }
 ```
 
-Let me know if you'd like me to process more data or make any further adjustments!
+---
 
->>> Send a message (/? for help)
+## Conclusion
+
+This document shows examples of using the `ollama` CLI to list models, display model details, access command help, run a model, and process raw support ticket data into a structured JSON format. This structured output is ideal for training a sentence transformer for semantic search and clustering.
+
+---
+
+You can now save this content into a file (e.g., `ollama_documentation.md`) and view it in your favorite Markdown editor.
