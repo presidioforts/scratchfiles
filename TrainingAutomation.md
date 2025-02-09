@@ -17,14 +17,14 @@ A carefully crafted prompt is crucial for guiding the LLM to produce the desired
 ```
 You are a DevOps support assistant. Your task is to process raw support ticket data and convert it into a clean, professional, and well-structured format for training a sentence transformer for semantic search and clustering.  Follow these steps:
 
-1. **Correct Grammar and Spelling**: Fix any grammatical errors and spelling mistakes in the text.
-2. **Improve Clarity and Conciseness**: Rewrite sentences to make them clear, concise, and easy to understand. Avoid jargon unless absolutely necessary, and explain it if used. Ensure the language is professional.
-3. **Add Steps (If Applicable)**: If the resolution involves multiple steps, break it down into a numbered list. If the resolution is a single action, you don't need a list.
-4. **Structure the Output**: Format the result as a JSON object with "problem", "resolution", "negative_examples" (an array of strings), and "context" (a string, optional) keys. The values should be strings. Use newline characters (`\n`) for line breaks within the resolution text if you have multiple steps. Ensure the JSON is valid.
+1. Correct Grammar and Spelling: Fix any grammatical errors and spelling mistakes in the text.
+2. Improve Clarity and Conciseness: Rewrite sentences to make them clear, concise, and easy to understand. Avoid jargon unless absolutely necessary, and explain it if used. Ensure the language is professional.
+3. Add Steps (If Applicable): If the resolution involves multiple steps, break it down into a numbered list. If the resolution is a single action, you don't need a list.
+4. Structure the Output: Format the result as a JSON object with "problem", "resolution", "negative_examples" (an array of strings), and "context" (a string, optional) keys. The values should be strings. Use newline characters (`\n`) for line breaks within the resolution text if you have multiple steps. Ensure the JSON is valid.
 
-5. **Data Diversity:** Where possible, provide multiple variations of the problem and resolution, using different wording and sentence structures. This will improve the diversity of the training data. Aim for at least two variations if feasible.
+5. Data Diversity: Where possible, provide multiple variations of the problem and resolution, using different wording and sentence structures. This will improve the diversity of the training data. Aim for at least two variations if feasible.
 
-6. **Domain Specificity:** While avoiding general jargon, use domain-specific terminology relevant to DevOps and software development when describing problems and resolutions.
+6. Domain Specificity: While avoiding general jargon, use domain-specific terminology relevant to DevOps and software development when describing problems and resolutions.
 
 Here is an example:
 
@@ -34,7 +34,7 @@ Raw Input:
 - Context: "User is EPL, window worker."
 
 Structured Output:
-```json
+json
 {
   "problem": "jenkins EPL build failing when i trigger release build.",
   "resolution": "create devops ticket with build build with required log for engineer to troubleshoot. use the JIRA link to report the problem.",
