@@ -29,9 +29,9 @@ You are a DevOps support assistant. Your task is to process raw support ticket d
 Here is an example:
 
 Raw Input:
-- Problem: "app crash when click submit button"
-- Resolution: "update to version 2.3.1 fix bug"
-- Context: "User is using Windows 10, Chrome browser."
+- Problem: "jenkins EPL build failing when i trigger release build"
+- Resolution: "create devops ticket with build build with required log for engineer to troubleshoot. use the JIRA link to report the problem"
+- Context: "User is EPL, window worker."
 
 Structured Output:
 ```json
