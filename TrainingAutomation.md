@@ -44,7 +44,7 @@ json
   ],
     "context": "User is EPL, window worker."
 }
-```
+
 
 Now, process the following raw ticket data:
 
@@ -78,7 +78,7 @@ Now, process the following raw ticket data:
 
 **LLM Generated JSON Output (Example 2 - Variation):**
 
-```json
+json
 {
   "problem": "The npm package 'angular-2002.05069' is missing.",
   "resolution": "Resolve this by:\n1. Verifying the package version in your artifact repository or npm central.\n2. Updating the 'package.json' file with the correct, available version.\n3. Rerunning the build.",
@@ -88,7 +88,7 @@ Now, process the following raw ticket data:
   ],
   "context": "User Training"
 }
-```
+
 
 **5. Training the Sentence Transformer:**
 
