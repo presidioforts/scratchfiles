@@ -122,8 +122,3 @@ The generated JSON data will be used to train the Sentence Transformer model. Th
 
 2. **Automated Clustering**  
    Similar problems can be automatically grouped together, facilitating better organization and analysis of support tickets.
-
-3. **Enhanced DevOps Support**  
-   This will lead to faster resolution times and improved user experience.
-
-
