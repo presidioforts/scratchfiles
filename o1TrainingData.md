@@ -1,7 +1,3 @@
-Below is a clean, consistently formatted version of the document in Markdown. Feel free to adjust any headings, numbering, or styling to fit your specific requirements.
-
----
-
 ## Training Data Generation for Sentence Transformer: A DevOps Support Use Case
 
 This document outlines the process for generating high-quality training data for a Sentence Transformer model, specifically tailored for a DevOps support use case. The goal is to create a model capable of effectively performing:
