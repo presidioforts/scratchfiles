@@ -1,6 +1,3 @@
-Below is the formatted Markdown document you can save as a `.md` file:
-
----
 
 # Ollama CLI Commands and Support Ticket Data Processing
 
