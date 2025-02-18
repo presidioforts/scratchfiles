@@ -51,6 +51,44 @@ Best,
 
 ---
 
+@Configuration
+public class FilterConfig {
+    
+    private static final Set<String> ALLOWED_PATHS = new HashSet<>();
+
+    static {
+        ALLOWED_PATHS.add("/api");  // Allowing only paths under "/api"
+    }
+
+    @Bean
+    TomcatConnectorCustomizer connectorCustomizer() {
+        return connector -> connector.setEncodedSolidusHandling(EncodedSolidusHandling.DECODE.getValue());
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+            throws IOException, ServletException {
+        HttpServletRequest httpRequest = (HttpServletRequest) request;
+        HttpServletResponse httpResponse = (HttpServletResponse) response;
+        
+        String requestURI = httpRequest.getRequestURI();
+
+        // Remove trailing slash if present
+        if (StringUtils.endsWith(requestURI, "/")) {
+            requestURI = StringUtils.removeEnd(requestURI, "/");
+        }
+
+        // Check if the request is allowed
+        if (ALLOWED_PATHS.stream().anyMatch(requestURI::startsWith)) {
+            // Continue processing the request instead of forwarding
+            chain.doFilter(request, response);
+        } else {
+            // Reject invalid requests
+            httpResponse.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid redirect path");
+        }
+    }
+}
+
 This approach:
 ✔ Highlights the problem clearly.
 ✔ Encourages the developer to think about a solution.
