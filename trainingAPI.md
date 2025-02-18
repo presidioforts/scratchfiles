@@ -94,3 +94,83 @@ if __name__ == "__main__":
 ```
 
 This setup allows users or other systems to send new training data to update your model's performance based on new or changing data patterns. Remember, in a production environment, you'll want to add more layers of complexity for security, monitoring, and management.
+
+
+Here's how you can implement a lock mechanism to ensure that only one training session can update the model at a time:
+
+```python
+from fastapi import FastAPI, HTTPException, Depends
+from pydantic import BaseModel
+from typing import List
+from sentence_transformers import SentenceTransformer, InputExample, losses
+from torch.utils.data import DataLoader
+import torch
+import asyncio
+from datetime import datetime
+import threading
+
+app = FastAPI()
+
+class TrainingExample(BaseModel):
+    texts: List[str]
+    label: float
+
+class TrainingData(BaseModel):
+    examples: List[TrainingExample]
+
+# Mock authentication function
+async def get_current_user():
+    return {"user_id": "user123"}  # In real scenarios, this would be from actual authentication
+
+# Global model, loaded once
+model = SentenceTransformer('distilroberta-base')
+
+# Thread lock for training
+training_lock = threading.Lock()
+
+@app.post("/train/")
+async def train_model(data: TrainingData, current_user=Depends(get_current_user)):
+    try:
+        # Try to acquire the lock; if not available, wait
+        with training_lock:
+            train_examples = [InputExample(texts=example.texts, label=example.label) for example in data.examples]
+            train_dataloader = DataLoader(train_examples, shuffle=True, batch_size=16)
+            train_loss = losses.CosineSimilarityLoss(model)
+
+            # Train the model
+            num_epochs = 1
+            warmup_steps = int(len(train_dataloader) * num_epochs * 0.1)
+            model.fit(train_objectives=[(train_dataloader, train_loss)], epochs=num_epochs, warmup_steps=warmup_steps)
+
+            # Log the training event
+            with open("training_log.txt", "a") as log:
+                log.write(f"{datetime.now()} - Model updated by user {current_user['user_id']}\n")
+
+        return {"status": "Model updated successfully."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+```
+
+### Key Points:
+
+- **Lock Mechanism**: A `threading.Lock` is used to ensure that only one training operation can take place at a time. This prevents race conditions where multiple training sessions might try to update the model simultaneously.
+
+- **Context Manager**: The `with` statement ensures that the lock is acquired before the training starts and released once the training is complete, even if an exception occurs. 
+
+- **Performance**: Using a lock like this can introduce some latency if many requests come in close succession. For very high concurrency, you might want to look into more advanced synchronization techniques or consider using a distributed lock if your application scales across multiple machines.
+
+- **Logging**: The logging still occurs inside the lock to ensure that the log message corresponds exactly with the training session that just completed.
+
+- **Error Handling**: If an exception occurs, it's still caught and turned into an HTTP exception, but the lock ensures that the model state remains consistent even during failures.
+
+Remember, in a real-world scenario:
+
+- You might want to implement more sophisticated error handling, like retrying a training session if it fails for transient reasons.
+- Consider a queue system for training requests if training takes a long time, to prevent blocking other operations or requests.
+- If training sessions are expected to be very long, you might also want to implement a timeout mechanism on the lock or consider using a different concurrency model like asyncio for better resource utilization.
+
+This setup ensures that the model update process is atomic, preventing issues from simultaneous updates but at the cost of potential increased wait times for training requests.
