@@ -1,0 +1,20 @@
+
+// Save to "issues_resolutions.json" in the same folder
+[
+  {
+    "issue": "Build failed due to missing dependency",
+    "resolution": "Add the missing package to requirements.txt and rebuild."
+  },
+  {
+    "issue": "Deployment stuck in pending state",
+    "resolution": "Increase the timeout in the CI/CD config or check container logs."
+  },
+  {
+    "issue": "Runtime error: 'index out of range'",
+    "resolution": "Add bounds checking for list indexing and handle edge cases."
+  },
+  {
+    "issue": "Slower UI rendering on some browsers",
+    "resolution": "Optimize JavaScript logic and reduce unnecessary DOM reflows."
+  }
+]
