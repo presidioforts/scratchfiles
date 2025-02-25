@@ -1,0 +1,5 @@
+
+[
+    {"issue": "Build failed due to missing dependency", "resolution": "Add package X to requirements.txt"},
+    {"issue": "Deployment stuck in pending state", "resolution": "Increase timeout in CI/CD config"}
+]
