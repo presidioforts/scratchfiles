@@ -1,0 +1,19 @@
+[
+  {
+    "issue": "Build failed due to missing dependency.",
+    "resolution": "Add package X to requirements.txt and rebuild."
+  },
+  {
+    "issue": "Deployment stuck in pending state.",
+    "resolution": "Increase the CI/CD timeout or check container logs."
+  },
+  {
+    "issue": "Runtime error: 'index out of range'",
+    "resolution": "Add bounds-checking for list indexing and handle edge cases."
+  },
+  {
+    "issue": "UI rendering is slow on mobile devices.",
+    "resolution": "Optimize JS logic to reduce reflows and bundle size."
+  }
+]
+
