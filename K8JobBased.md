@@ -1,10 +1,3 @@
-Below is a **final, comprehensive “super document”** that merges **all** the essential pieces:
-
-1. **Introduction** and **Tools Overview** (Crane and Twist CLI).  
-2. The **full Kubernetes Job YAML**.  
-3. A **step-by-step breakdown** explaining each section of the YAML in detail.  
-4. **Key takeaways** and **best practices** for using Crane and Twist CLI in Kubernetes.
-
 ---
 
 # Image Scanning Infrastructure: Using Crane and Twist CLI for Security Analysis
