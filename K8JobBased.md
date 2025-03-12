@@ -1,4 +1,3 @@
----
 
 # Image Scanning Infrastructure: Using Crane and Twist CLI for Security Analysis
 
