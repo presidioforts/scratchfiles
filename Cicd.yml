@@ -1,0 +1,42 @@
+
+Here’s the revised backlog status report without the root cause section:
+
+
+---
+
+Tool: EPL-X IDP/Migration
+
+Summary: EPL-X Migration Tool Not Effectively Converting cicd.yml to GitHub Actions Workflow Inputs
+
+Description:
+Developers migrating EPL applications from Enterprise Git to GitSaaS using the IDP/Migration tool are experiencing high build failure rates (80%) on the first commit, with only 15-20% snapshot build success.
+
+Goal:
+
+Fix gaps in the migration tool to ensure accurate conversion of cicd.yml to workflow inputs.
+
+Improve tool reliability so that applications migrate smoothly without initial build failures.
+
+
+Action Performed by Platform:
+
+Identified inconsistencies in cicd.yml conversion.
+
+Recommended enhancements to the IDP/Migration tool to improve conversion accuracy.
+
+
+Action Performed by LoB/Product Engineering:
+
+Required to implement fixes in the migration tool to ensure 100% accuracy in workflow input conversion.
+
+Validate migration results post-fix to confirm successful first-time builds.
+
+
+Current Status: Issue Identified / Fix Implementation Pending
+Next Steps: Product Engineering to implement fixes and validate successful migrations.
+
+
+---
+
+Ready for the next issue.
+
