@@ -1,0 +1,13 @@
+{
+    "model": "all-MiniLM-L6-v2",
+    "data": [
+        {"input": "System started successfully", "label": "success"},
+        {"input": "Failed to start system", "label": "error"},
+        {"input": "System running normally", "label": "success"},
+        {"input": "Critical error in main process", "label": "error"},
+        {"input": "All services operational", "label": "success"},
+        {"input": "Connection timeout", "label": "error"},
+        {"input": "Database connection established", "label": "success"},
+        {"input": "Memory allocation failed", "label": "error"}
+    ]
+} 
