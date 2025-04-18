@@ -1,0 +1,6 @@
+streamlit==1.34.0
+torch==2.2.2
+transformers==4.40.2
+accelerate==0.28.0
+sentencepiece==0.1.99
+tokenizers==0.19.1
