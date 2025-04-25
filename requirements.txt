@@ -1,0 +1,7 @@
+# Core model + inference
+sentence-transformers==2.6.1     # pulls transformers & huggingface-hub
+torch==2.2.2                     # CPU wheel, fine for Cloud Run
+
+# API server
+fastapi==0.110.0                 # pydantic v2 compatible
+uvicorn[standard]==0.29.0        # production ASGI server with httptools & uvloop
