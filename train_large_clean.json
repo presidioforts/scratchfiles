@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "input": "Broken npm installation",
+      "target": "Reinstall Node.js (which includes npm); on macOS or Linux reinstall Node.js or update npm with npm install -g npm@latest, and on Windows uninstall then reinstall Node.js, then verify with npm -v."
+    },
+    {
+      "input": "Random errors (unspecified npm errors)",
+      "target": "Clear the npm cache with npm cache clean --force, rerun the command with npm install --verbose to inspect logs, delete node_modules and package-lock.json, update Node.js and npm, then reinstall dependencies."
+    },
+    {
+      "input": "No compatible version found",
+      "target": "Upgrade npm to the latest version, verify that the requested package name and version exist, clear the npm cache, and adjust the dependency to a valid published version if necessary."
+    },
+    {
+      "input": "EACCES: permission denied (npm permissions error)",
+      "target": "Install Node.js with a version manager or change npm's global prefix to a directory you own; avoid sudo or change ownership of global npm directories to your user before installing packages."
+    },
+    {
+      "input": "Error: ENOENT, stat 'C:\\Users\\<user>\\AppData\\Roaming\\npm'",
+      "target": "Create the folder %APPDATA%\\npm manually, ensure it is writable by your user, and rerun the npm command."
+    },
+    {
+      "input": "ENOSPC: no space left on device",
+      "target": "Free disk space or set npm's tmp directory to a drive with space, then retry the npm operation."
+    },
+    {
+      "input": "npm ERR! not found: git (ENOGIT)",
+      "target": "Install Git, ensure git is on the system PATH, then rerun npm."
+    },
+    {
+      "input": "Path length issues on Windows (MAX_PATH limitation)",
+      "target": "Enable long path support in Windows or move the project to a shorter path and use a dependency manager that flattens node_modules."
+    },
+    {
+      "input": "Git/SSH protocol blocked by proxy",
+      "target": "Configure Git to rewrite git and ssh URLs to https, and set npm proxy settings so packages are fetched over HTTPS through the proxy."
+    },
+    {
+      "input": "SSL Error (CERT_UNTRUSTED or SELF_SIGNED_CERT_IN_CHAIN)",
+      "target": "Upgrade Node.js, verify registry and proxy URLs, add your corporate certificate with npm config set cafile, or temporarily set strict-ssl false only for troubleshooting."
+    },
+    {
+      "input": "SSL-intercepting proxy (corporate MITM)",
+      "target": "Export the proxy's root certificate and configure npm cafile or NODE_EXTRA_CA_CERTS, or use an http registry with strict-ssl false as a last resort."
+    },
+    {
+      "input": "404 Not Found (npm registry)",
+      "target": "Check the package name and version, verify registry status, ensure you are authorised for private packages, or update the dependency to an existing version."
+    },
+    {
+      "input": "Error: Invalid JSON (npm registry response)",
+      "target": "Clear the npm cache, verify proxy configuration, wait and retry, or install a different version of the problematic package if the error persists."
+    },
+    {
+      "input": "ENOENT / ENOTEMPTY errors during install",
+      "target": "Update npm, remove node_modules and package-lock.json, reinstall dependencies, and temporarily limit concurrency or disable antivirus if required."
+    },
+    {
+      "input": "npm ERR! cb() never called!",
+      "target": "Upgrade npm, remove any shrinkwrap or lock file, delete node_modules, and run npm install again."
+    },
+    {
+      "input": "npm login error (password_sha and pbkdf2)",
+      "target": "Log in to npm via the website, reset or confirm your password, clear saved tokens in .npmrc, then run npm login again with the correct email."
+    },
+    {
+      "input": "npm hangs on Windows at addRemoteTarball",
+      "target": "Ensure npm config has only one tmp directory, delete duplicate tmp entries, clear the cache, and retry the install."
+    },
+    {
+      "input": "npm not updated (Windows old version persists)",
+      "target": "Remove duplicate npm installations, reinstall Node.js or adjust PATH to prioritise the updated npm in %AppData%\\npm, then reopen the terminal and verify with npm -v."
+    },
+    {
+      "input": "Network error (ETIMEDOUT or ECONNRESET)",
+      "target": "Check internet connectivity, configure npm proxy settings, verify registry URL, test on another network, or increase fetch-timeout for slow links."
+    },
+    {
+      "input": "E401 Unauthorized (need authorization)",
+      "target": "Run npm login or set a valid auth token for the registry, ensure you have permission to the package, and retry."
+    },
+    {
+      "input": "ERESOLVE unable to resolve dependency tree",
+      "target": "Read the conflict details, align package versions or install missing peer dependencies, or use npm install --legacy-peer-deps as a temporary workaround."
+    },
+    {
+      "input": "node-gyp build error (native module compilation failed)",
+      "target": "Install the required C and C++ build tools and Python, configure node-gyp if needed, then retry npm install."
+    },
+    {
+      "input": "Refusing to install package as a dependency of itself",
+      "target": "Do not install the project by its own name; remove the self-reference or rename the project or dependency before running npm install."
+    },
+    {
+      "input": "npm ERR! code ELIFECYCLE (script failed)",
+      "target": "Inspect the script that failed, fix the underlying error in the build or environment, and rerun the command."
+    },
+    {
+      "input": "Unsupported engine (Node or npm version incompatible)",
+      "target": "Switch to a Node.js version that satisfies the package's engine requirement or override the check only if you are certain the package will work."
+    }
+  ]
+}
