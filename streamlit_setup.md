@@ -16,4 +16,14 @@ typing_extensions==4.10.0    # back-compat for some libs
 
 
 
+
+
+streamlit==1.34.0     # main UI framework
+requests==2.31.0      # call the FastAPI backend
+
+python -m venv venv-ui
+venv-ui\Scripts\activate        # Linux/macOS: source venv-ui/bin/activate
+pip install -r requirements-ui.txt
+
+
 streamlit run ui_troubleshooter.py
