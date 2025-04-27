@@ -17,6 +17,7 @@ typing_extensions==4.10.0    # back-compat for some libs
 
 
 
+# misc runtime helpers ───────────────────────────────────────
 
 streamlit==1.34.0     # main UI framework
 requests==2.31.0      # call the FastAPI backend
