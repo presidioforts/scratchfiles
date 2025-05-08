@@ -1,4 +1,4 @@
-
+i
 source venv/bin/activate
 gunicorn app:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8080
 
@@ -20,5 +20,12 @@ st.markdown(
     }
     </style>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=Truce
 )
+
+
+
+cd ~
+wget https://www.python.org/ftp/python/3.12.0/Python-3.12.0.tgz
+tar -xzf Python-3.12.0.tgz
+cd Python-3.12.0
