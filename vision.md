@@ -12,7 +12,7 @@ Empower our platform‑service engineers with an AI‑driven DevOps assistant th
 
 ### 2. Conversational Chat Assistant Conversational Chat Assistant
 
-* **What it is:** A friendly chat interface (we have created chatGPT like UI for this) where engineers ask follow‑up questions — “What did we do last time?” — and get clear, human‑style guidance.
+* **What it is:** A friendly chat interface (chatGPT like UI) where engineers ask follow‑up questions — “What did we do last time?” — and get clear, human‑style guidance.
 * **Why it matters:** Reduces back‑and‑forth between teams, keeps engineers in context, and speeds resolution.
 
 ### 3. Agentic Automation
