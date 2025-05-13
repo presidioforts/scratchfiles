@@ -1,10 +1,11 @@
-Currently, the CI product’s application‑component onboarding process enforces developers to manually configure **20+** CI property keys in the workflow YAML for each component. This manual YAML editing is error‑prone—leading to typos, misconfigurations, broken builds, and a spike in support tickets—and it slows down onboarding from minutes to hours or days.
+Currently, the CI product’s application‑component onboarding requires developers to hand‑edit 20+ workflow property keys in YAML for each component. This manual approach is error‑prone—causing typos, misconfigurations, and broken builds, driving a surge in support tickets—and stretches onboarding from minutes to days.
 
-We need to enhance the IDP UI so that it:
+We need to enhance the **IDP / ELMA UI** to:
 
-1. **Auto‑discovers** all available CI workflow property keys by buildpack (npm, Gradle, Maven, plain Python, etc.) along with their last‑saved values.
-2. **Presents** them in a guided, form‑driven interface where developers can view or update values without touching YAML.
-3. **Persists** those values centrally and, at CI execution time, **injects** them into the workflow context map automatically.
-4. **Mandates** that any change to a property value goes through the UI—eliminating hand‑edited YAML as the single point of truth.
+* **Auto‑discover** all CI workflow property keys by buildpack (npm, Gradle, Maven, plain Python, etc.) and their last‑saved values
+* **Present** them in a guided, form‑driven interface so developers never touch YAML
+* **Persist** those values centrally and, at CI execution time, inject them into the workflow context map
+* **Enforce** UI‑only edits—eliminating hand‑edited YAML as a source of truth
 
-This will remove manual configuration pain, prevent build failures, slash support tickets, and restore onboarding to a sub‑15‑minute experience.
+This will eliminate manual configuration errors, slash support tickets, and restore onboarding to under one hour.
+
