@@ -1,6 +1,6 @@
 I have to Planned Transition of my current Responsibilities
 
-As part of my new role, the following tasks will transition to Break-Fix leads to streamline support operations and ensure clear ownership:
+As part of my new role, the following tasks I will transition to Break-Fix leads to streamline support operations and ensure clear ownership:
 
 * **DevOps Ticket Handling:**
 
