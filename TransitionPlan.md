@@ -4,7 +4,7 @@ As part of my new role, the following tasks I will transition to Break-Fix leads
 
 * **DevOps Ticket Handling:**
 
-  * Customer-initiated DevOps ticket handling, previously escalated directly to me, will now be systematically routed to Break-Fix leads for initial triage and necessary resolution.
+  * Customer(chat)-initiated DevOps ticket handling, previously escalated directly to me, will now be systematically routed to Break-Fix leads for initial triage and necessary resolution.
 
 * **Documentation Maintenance:**
 
