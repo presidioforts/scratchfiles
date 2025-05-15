@@ -8,7 +8,7 @@ For your presentation, your document should clearly explain **both the MCP serve
 
 #### 1. **Title Slide**
 
-* **Title**: “DevOps AI Assistant for FinTech Enterprise – MCP-Based Architecture & UI Design”
+* **Title**: “DevOps AI Assistant for FinTech Enterprise – MCP-Based Architecture & UI Design” MCP (Model Coordination/Control Plane) server
 * Your name, date, team
 
 ---
