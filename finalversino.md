@@ -12,7 +12,7 @@ These transitions will free up approximately **40% to 50%** of my current worklo
 
 * Collaborate with Engineering to enhance EPL-X product OCP Cloud Infrastructure for application migration and related platform activities.
 * Optimize EPL-X infrastructure components, focusing on Objectstore improvements, Runner Kubernetes cluster sizing, and comprehensive infrastructure scaling to support upcoming migrations.
-* Plus, any other critical task those I need to focus as part of new role.
+* Take ownership of any other critical tasks that require strategic focus as part of the new role.
 
 ---
 
