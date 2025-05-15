@@ -12,7 +12,7 @@ As part of my new role, the following tasks I will transition to Break-Fix leads
 
 These transitions will free up approximately 40% to 50% of my current workload, enabling me to strategically focus on the following proposed objectives:
 
-* Develop and enhance EPL-X and OCP Cloud Infrastructure for application migration and related platform activities.
+* Work with Engineering to enhance EPL-X product OCP Cloud Infrastructure for application migration and related platform activities.
 * Optimize EPL-X infrastructure components, focusing on Objectstore improvements, Runner Kubernetes cluster sizing, and comprehensive infrastructure scaling to support upcoming migrations effectively.
 
 ---
