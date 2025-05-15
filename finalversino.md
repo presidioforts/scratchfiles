@@ -18,7 +18,7 @@ These transitions will free up approximately **40% to 50%** of my current worklo
 
 #### Current Responsibilities I would like to continue
 
-In my current role as a **Platform SRE and Subject Matter Expert (SME)**, I actively lead and collaborate on several critical activities to ensure product and platform stability and effectiveness:
+In my current role as a **Platform SRE and Subject Matter Expert (SME)**, I actively lead and collaborate on several critical activities to ensure product effectiveness and platform stability:
 
 * **Release Tag Analysis:**
 
