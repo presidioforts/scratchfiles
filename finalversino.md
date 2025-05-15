@@ -1,4 +1,5 @@
 Hello Chandra,
+
 Thank you for setting up the meeting with Paul. As discussed, in line with my new role, the following tasks will be transitioned to the Break-Fix leads to streamline support operations and ensure clear ownership:
 
 * **DevOps Ticket Handling:**
