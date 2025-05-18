@@ -1,7 +1,13 @@
-<Typography variant="body1" sx={{ wordBreak: 'break-word' }}>
-  {isUser ? (
-    message.content
-  ) : (
-    <ReactMarkdown>{message.content}</ReactMarkdown>
-  )}
-</Typography>
+<Paper
+  elevation={isUser ? 3 : 1}
+  sx={{
+    maxWidth: '95%',
+    width: 'fit-content',
+    p: 2,
+    borderRadius: 3,
+    bgcolor: isUser ? 'primary.main' : 'grey.100',
+    color: isUser ? 'primary.contrastText' : 'text.primary',
+    overflowX: 'auto',
+    whiteSpace: 'pre-wrap',
+  }}
+>
