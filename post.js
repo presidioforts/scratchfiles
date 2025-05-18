@@ -1,4 +1,7 @@
-const url = `${config.API_URL}?q=${encodeURIComponent(content)}`;
-const response = await fetch(url, {
-  method: 'POST'
+const response = await fetch(config.API_URL, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ text: content }),
 });
