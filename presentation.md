@@ -54,7 +54,8 @@ Engineers interact with an expert AI assistant that uses the Knowledge Base mode
 
 * Provides intuitive, human-like assistance at scale
 * Reduces support friction and escalations
-* Speeds onboarding and builds engineer confidence
+* Speeds onboarding, improves developer experience, and builds engineer confidence
+
 
 ---
 
