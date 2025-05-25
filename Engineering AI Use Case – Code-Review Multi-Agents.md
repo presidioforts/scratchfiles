@@ -2,7 +2,7 @@
 
 Hello Satish,
 
-Per our discussion, we’re concentrating on three AI initiatives this cycle—two for Platform Services and one for Product Engineering. Below is the final Engineering use case. Once approved, we can deploy the multi-agent framework across all EPL, EPL-X, and CIWAT repositories.
+Per our discussion, we’re concentrating on three AI initiatives this cycle—two for Platform Services and one for Product Engineering. Below is the final Engineering use case. Platform Service team can take responsibility deploy the multi-agent framework across all EPL, EPL-X, and CIWAT repositories.
 
 ---
 
