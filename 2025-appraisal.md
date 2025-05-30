@@ -1,22 +1,30 @@
-Thank you. Here's a refined version suitable for a **performance self-review** or **performance appraisal** document:
+## Self-Review – Performance Appraisal
 
----
+### Project: CIWAT SCP API Microservice Platform – Support Transition
 
-### **Project: CIWAT SCP API Microservice Platform – Support Transition**
+#### Tasks Performed:
 
-**Tasks Performed:**
+1. **Transition SME Team Formation:**
+   Collaborated closely with Principal Engineers to establish the Subject Matter Expert (SME) transition team. Conducted comprehensive CIWAT architecture and design knowledge transfer (KT) sessions, partnering with Engineering to thoroughly document and explain component integrations across all services. Performed detailed code design reviews and walkthroughs for 55 services, including DSOP, CI/CD Policy Services, EPL, EPL-X, and Harness APIs.
 
-1. Led the formation of the SME transition team in collaboration with Principal Engineers. Conducted architecture and design knowledge transfer (KT) sessions covering CIWAT platform components from engineering. Facilitated code walkthroughs for all 55 microservices, including DSOP, CI/CD Policy Services, EPL, EPL-X, and Harness APIs.
-2. Performed in-depth analysis of systemic and performance issues across all APIs. Created and tracked defects, partnered with Engineering teams, and successfully stabilized Wave 1—comprising 10 essential services and 3 DSOP services.
-3. Collaborated closely with Principal Engineers and Observability developers to define and document L1/L2 operational procedures. Created runbooks and established a sustainable support model for the CIWAT platform.
-4. Successfully completed the support transition for 13 services, now fully managed by the Platform Services team.
+2. **Systemic and Performance Analysis:**
+   Identified and analyzed systemic performance issues across all APIs. Initiated defect tracking, coordinated closely with Engineering to resolve critical defects, and successfully stabilized Wave 1, encompassing 10 essential platform services and 3 DSOP services.
 
-**Next Steps:**
-Transition work is in progress for the remaining 42 services.
+3. **Operationalization of Platform:**
+   Worked collaboratively with Principal Engineers and Observability feature teams to develop comprehensive L1 and L2 runbooks. Successfully operationalized and transitioned the CIWAT SCP API platform to Platform Services, ensuring effective operational management.
 
-**Status:**
-Wave 1 completed and operational.
+4. **Support Transition:**
+   Completed the transition for 13 key services, which are now entirely managed by the Platform Services team, significantly enhancing operational stability and response effectiveness.
 
----
+#### Project Status:
 
-Let me know if you'd like to add outcomes, impact metrics, or reflection points.
+* Successfully completed Wave 1 support transition over a duration exceeding six months.
+* Currently progressing through Wave 2, focusing on the transition of remaining services.
+
+#### Feedback and Monitoring:
+
+* Consistently gathered detailed feedback from Platform Services teams to proactively address knowledge gaps and documentation deficiencies.
+* Organized targeted follow-up KT sessions to address identified knowledge gaps and updated runbooks to reflect current operational standards.
+* Established robust monitoring checkpoints in collaboration with Observability teams to ensure sustained service health and proactive incident management.
+* Continuously monitored incident trends and response effectiveness, refining L1/L2 operational workflows to enhance efficiency and reliability.
+* From an SRE perspective, achieved notable platform stability, evidenced by significantly reduced incidents related to API failures for consumer products including EPL, EPL-X, and Harness.
