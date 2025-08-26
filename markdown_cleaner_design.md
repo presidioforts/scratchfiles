@@ -17,3 +17,4 @@ graph TD
     style F fill:#c8e6c9
     style E fill:#fff3e0
     style D fill:#f3e5f5
+<img width="605" height="625" alt="image" src="https://github.com/user-attachments/assets/8f33f911-4fa1-4847-9e03-f543c6d0ec73" />
